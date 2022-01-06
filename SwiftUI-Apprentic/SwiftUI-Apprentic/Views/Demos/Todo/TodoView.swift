@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct TodoView: View {
+    @State var showAddTodoItemView = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                NavigationLink(destination: TodoDetailView(content: "content")) {
+                    HStack {
+                        Image(systemName: "circle")
+                        Text("Study")
+                    }
+                }
+            }
+            .navigationTitle("Todo")
+            .navigationBarItems(trailing: Button(action: {
+                showAddTodoItemView.toggle()
+            }, label: {
+                Image(systemName: "plus")
+            }))
+            .sheet(isPresented: $showAddTodoItemView) {
+                AddTodoItemView()
+            }
+        }
     }
 }
 
