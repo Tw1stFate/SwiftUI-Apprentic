@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct TodoView: View {
+    @StateObject var realmManager = RealmManager()
     @State var showAddTodoItemView = false
     
     var body: some View {
-        NavigationView {
-            List {
-                NavigationLink(destination: TodoDetailView(content: "content")) {
-                    HStack {
-                        Image(systemName: "circle")
-                        Text("Study")
-                    }
+        ZStack(alignment: .bottomTrailing) {
+            TaskView()
+                .environmentObject(realmManager)
+            FloatBtn()
+                .padding()
+                .onTapGesture {
+                    showAddTodoItemView.toggle()
                 }
-            }
-            .navigationTitle("Todo")
-            .navigationBarItems(trailing: Button(action: {
-                showAddTodoItemView.toggle()
-            }, label: {
-                Image(systemName: "plus")
-            }))
-            .sheet(isPresented: $showAddTodoItemView) {
-                AddTodoItemView()
-            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(hue: 0.086, saturation: 0.141, brightness: 0.972))
+        .background(Color.red)
+        .sheet(isPresented: $showAddTodoItemView) {
+            AddTaskView()
+                .environmentObject(realmManager)
+        }
+        .navigationTitle("Tasks")
     }
 }
 
@@ -38,3 +37,4 @@ struct TodoView_Previews: PreviewProvider {
         TodoView()
     }
 }
+

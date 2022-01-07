@@ -7,15 +7,26 @@
 
 import SwiftUI
 
-struct AddTodoItemView: View {
-    @State var content = ""
+@available(iOS 15.0, *)
+struct AddTaskView: View {
+    @EnvironmentObject var realmManager: RealmManager
+    @State private var title = ""
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
         VStack(alignment: .leading) {
-            TextField("Enter your todo item", text: $content)
+            Text("Creat new task")
+                .font(.title).bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            TextField("Enter your todo item", text: $title)
                 .padding()
             Button {
-                // save todo item
+                // save task item
+                if title != "" {
+                    realmManager.addTask(title: title)
+                }
+                dismiss()
             } label: {
                 Image(systemName: "plus")
                     .padding()
@@ -32,6 +43,7 @@ struct AddTodoItemView: View {
 
 struct AddTodoItem_Previews: PreviewProvider {
     static var previews: some View {
-        AddTodoItemView()
+        AddTaskView()
+            .environmentObject(RealmManager())
     }
 }
