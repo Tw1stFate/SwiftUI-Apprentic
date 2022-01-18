@@ -12,6 +12,7 @@
 		5E553AD62764D54400443127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E553AD52764D54400443127 /* Assets.xcassets */; };
 		5E553AD92764D54400443127 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E553AD82764D54400443127 /* Preview Assets.xcassets */; };
 		5E6A53292796F6CC00CAFD8B /* FaceID&TouchIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A53282796F6CC00CAFD8B /* FaceID&TouchIDView.swift */; };
+		5E6A532C2796F7A000CAFD8B /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A532B2796F7A000CAFD8B /* NetworkView.swift */; };
 		5EAB840E27871ED80056C827 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB840D27871ED80056C827 /* TodoView.swift */; };
 		5EAB8413278723BA0056C827 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB8412278723BA0056C827 /* AddTaskView.swift */; };
 		5EAB841627872A3E0056C827 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 5EAB841527872A3E0056C827 /* Realm */; };
@@ -29,6 +30,7 @@
 		5E553AD52764D54400443127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E553AD82764D54400443127 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E6A53282796F6CC00CAFD8B /* FaceID&TouchIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FaceID&TouchIDView.swift"; sourceTree = "<group>"; };
+		5E6A532B2796F7A000CAFD8B /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		5EAB840D27871ED80056C827 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		5EAB8412278723BA0056C827 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		5EAB841927872C740056C827 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 			path = "FaceID&Touch ID";
 			sourceTree = "<group>";
 		};
+		5E6A532A2796F79200CAFD8B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5E6A532B2796F7A000CAFD8B /* NetworkView.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		5EAB840827871A160056C827 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		5EAB840F278721430056C827 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				5E6A532A2796F79200CAFD8B /* Network */,
 				5E6A53272796F69400CAFD8B /* FaceID&Touch ID */,
 				5EAB840C27871A8E0056C827 /* Todo */,
 			);
@@ -220,6 +231,7 @@
 				5EAB8413278723BA0056C827 /* AddTaskView.swift in Sources */,
 				5EAB840E27871ED80056C827 /* TodoView.swift in Sources */,
 				5E553AD42764D54300443127 /* HomePage.swift in Sources */,
+				5E6A532C2796F7A000CAFD8B /* NetworkView.swift in Sources */,
 				5EAB842027887FFD0056C827 /* FloatBtn.swift in Sources */,
 				5E553AD22764D54300443127 /* SwiftUI_ApprenticApp.swift in Sources */,
 				5EAB841C27886E9D0056C827 /* Task.swift in Sources */,
