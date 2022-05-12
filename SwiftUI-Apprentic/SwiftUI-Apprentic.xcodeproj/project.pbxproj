@@ -21,6 +21,11 @@
 		5EAB841C27886E9D0056C827 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB841B27886E9D0056C827 /* Task.swift */; };
 		5EAB841E27887EDE0056C827 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB841D27887EDE0056C827 /* TaskView.swift */; };
 		5EAB842027887FFD0056C827 /* FloatBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB841F27887FFD0056C827 /* FloatBtn.swift */; };
+		5EDC7019282D285C0051407E /* SwiftUIView-iOS15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC7018282D285C0051407E /* SwiftUIView-iOS15.swift */; };
+		5EDC701B282D35E20051407E /* VSyncImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC701A282D35E20051407E /* VSyncImgView.swift */; };
+		5EDC701D282D3D6F0051407E /* T_TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC701C282D3D6F0051407E /* T_TabView.swift */; };
+		5EDC701F282D408F0051407E /* T_SafeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC701E282D408F0051407E /* T_SafeAreaView.swift */; };
+		5EDC7021282D49F00051407E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC7020282D49F00051407E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		5EAB841B27886E9D0056C827 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5EAB841D27887EDE0056C827 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		5EAB841F27887FFD0056C827 /* FloatBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatBtn.swift; sourceTree = "<group>"; };
+		5EDC7018282D285C0051407E /* SwiftUIView-iOS15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-iOS15.swift"; sourceTree = "<group>"; };
+		5EDC701A282D35E20051407E /* VSyncImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSyncImgView.swift; sourceTree = "<group>"; };
+		5EDC701C282D3D6F0051407E /* T_TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_TabView.swift; sourceTree = "<group>"; };
+		5EDC701E282D408F0051407E /* T_SafeAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_SafeAreaView.swift; sourceTree = "<group>"; };
+		5EDC7020282D49F00051407E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				5E553AD12764D54300443127 /* SwiftUI_ApprenticApp.swift */,
-				5EAB840B27871A5B0056C827 /* Views */,
+				5EDC7016282D26E20051407E /* Apprentic */,
+				5EAB840B27871A5B0056C827 /* Demos */,
 				5EAB840927871A300056C827 /* Extensions */,
 				5E553AD52764D54400443127 /* Assets.xcassets */,
 				5E553AD72764D54400443127 /* Preview Content */,
@@ -118,14 +129,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		5EAB840B27871A5B0056C827 /* Views */ = {
+		5EAB840B27871A5B0056C827 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
 				5E553AD32764D54300443127 /* HomePage.swift */,
 				5EAB840F278721430056C827 /* Demos */,
 				5EAB840827871A160056C827 /* Controls */,
 			);
-			path = Views;
+			path = Demos;
 			sourceTree = "<group>";
 		};
 		5EAB840C27871A8E0056C827 /* Todo */ = {
@@ -149,6 +160,26 @@
 				5EAB840C27871A8E0056C827 /* Todo */,
 			);
 			path = Demos;
+			sourceTree = "<group>";
+		};
+		5EDC7016282D26E20051407E /* Apprentic */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC7017282D272F0051407E /* WhatsNewInSwiftUI-iOS15 */,
+			);
+			path = Apprentic;
+			sourceTree = "<group>";
+		};
+		5EDC7017282D272F0051407E /* WhatsNewInSwiftUI-iOS15 */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC7020282D49F00051407E /* README.md */,
+				5EDC7018282D285C0051407E /* SwiftUIView-iOS15.swift */,
+				5EDC701A282D35E20051407E /* VSyncImgView.swift */,
+				5EDC701C282D3D6F0051407E /* T_TabView.swift */,
+				5EDC701E282D408F0051407E /* T_SafeAreaView.swift */,
+			);
+			path = "WhatsNewInSwiftUI-iOS15";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDC7021282D49F00051407E /* README.md in Resources */,
 				5E553AD92764D54400443127 /* Preview Assets.xcassets in Resources */,
 				5E553AD62764D54400443127 /* Assets.xcassets in Resources */,
 			);
@@ -228,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDC701B282D35E20051407E /* VSyncImgView.swift in Sources */,
 				5EAB8413278723BA0056C827 /* AddTaskView.swift in Sources */,
 				5EAB840E27871ED80056C827 /* TodoView.swift in Sources */,
 				5E553AD42764D54300443127 /* HomePage.swift in Sources */,
@@ -235,7 +268,10 @@
 				5EAB842027887FFD0056C827 /* FloatBtn.swift in Sources */,
 				5E553AD22764D54300443127 /* SwiftUI_ApprenticApp.swift in Sources */,
 				5EAB841C27886E9D0056C827 /* Task.swift in Sources */,
+				5EDC7019282D285C0051407E /* SwiftUIView-iOS15.swift in Sources */,
+				5EDC701F282D408F0051407E /* T_SafeAreaView.swift in Sources */,
 				5EAB841A27872C740056C827 /* RealmManager.swift in Sources */,
+				5EDC701D282D3D6F0051407E /* T_TabView.swift in Sources */,
 				5E6A53292796F6CC00CAFD8B /* FaceID&TouchIDView.swift in Sources */,
 				5EAB841E27887EDE0056C827 /* TaskView.swift in Sources */,
 			);
