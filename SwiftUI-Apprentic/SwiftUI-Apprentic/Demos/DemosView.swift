@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomePage: View {
+struct DemosView: View {
     @State var showAddItemView = false
     
     var body: some View {
@@ -38,6 +38,6 @@ struct HomePage: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomePage()
+        DemosView()
     }
 }

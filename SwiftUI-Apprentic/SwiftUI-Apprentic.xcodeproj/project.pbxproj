@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E553AD22764D54300443127 /* SwiftUI_ApprenticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E553AD12764D54300443127 /* SwiftUI_ApprenticApp.swift */; };
-		5E553AD42764D54300443127 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E553AD32764D54300443127 /* HomePage.swift */; };
+		5E553AD42764D54300443127 /* DemosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E553AD32764D54300443127 /* DemosView.swift */; };
 		5E553AD62764D54400443127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E553AD52764D54400443127 /* Assets.xcassets */; };
 		5E553AD92764D54400443127 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E553AD82764D54400443127 /* Preview Assets.xcassets */; };
 		5E6A53292796F6CC00CAFD8B /* FaceID&TouchIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A53282796F6CC00CAFD8B /* FaceID&TouchIDView.swift */; };
@@ -26,12 +26,14 @@
 		5EDC701D282D3D6F0051407E /* T_TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC701C282D3D6F0051407E /* T_TabView.swift */; };
 		5EDC701F282D408F0051407E /* T_SafeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC701E282D408F0051407E /* T_SafeAreaView.swift */; };
 		5EDC7021282D49F00051407E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC7020282D49F00051407E /* README.md */; };
+		5EDC7023282D4A2C0051407E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC7022282D4A2C0051407E /* MainTabView.swift */; };
+		5EDC7025282D4A4E0051407E /* ApprenticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC7024282D4A4E0051407E /* ApprenticView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E553ACE2764D54300443127 /* SwiftUI-Apprentic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Apprentic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E553AD12764D54300443127 /* SwiftUI_ApprenticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ApprenticApp.swift; sourceTree = "<group>"; };
-		5E553AD32764D54300443127 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		5E553AD32764D54300443127 /* DemosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosView.swift; sourceTree = "<group>"; };
 		5E553AD52764D54400443127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E553AD82764D54400443127 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E6A53282796F6CC00CAFD8B /* FaceID&TouchIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FaceID&TouchIDView.swift"; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		5EDC701C282D3D6F0051407E /* T_TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_TabView.swift; sourceTree = "<group>"; };
 		5EDC701E282D408F0051407E /* T_SafeAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_SafeAreaView.swift; sourceTree = "<group>"; };
 		5EDC7020282D49F00051407E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5EDC7022282D4A2C0051407E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		5EDC7024282D4A4E0051407E /* ApprenticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprenticView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				5E553AD12764D54300443127 /* SwiftUI_ApprenticApp.swift */,
+				5EDC7022282D4A2C0051407E /* MainTabView.swift */,
 				5EDC7016282D26E20051407E /* Apprentic */,
 				5EAB840B27871A5B0056C827 /* Demos */,
 				5EAB840927871A300056C827 /* Extensions */,
@@ -132,7 +137,7 @@
 		5EAB840B27871A5B0056C827 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				5E553AD32764D54300443127 /* HomePage.swift */,
+				5E553AD32764D54300443127 /* DemosView.swift */,
 				5EAB840F278721430056C827 /* Demos */,
 				5EAB840827871A160056C827 /* Controls */,
 			);
@@ -165,6 +170,7 @@
 		5EDC7016282D26E20051407E /* Apprentic */ = {
 			isa = PBXGroup;
 			children = (
+				5EDC7024282D4A4E0051407E /* ApprenticView.swift */,
 				5EDC7017282D272F0051407E /* WhatsNewInSwiftUI-iOS15 */,
 			);
 			path = Apprentic;
@@ -263,7 +269,7 @@
 				5EDC701B282D35E20051407E /* VSyncImgView.swift in Sources */,
 				5EAB8413278723BA0056C827 /* AddTaskView.swift in Sources */,
 				5EAB840E27871ED80056C827 /* TodoView.swift in Sources */,
-				5E553AD42764D54300443127 /* HomePage.swift in Sources */,
+				5E553AD42764D54300443127 /* DemosView.swift in Sources */,
 				5E6A532C2796F7A000CAFD8B /* NetworkView.swift in Sources */,
 				5EAB842027887FFD0056C827 /* FloatBtn.swift in Sources */,
 				5E553AD22764D54300443127 /* SwiftUI_ApprenticApp.swift in Sources */,
@@ -274,6 +280,8 @@
 				5EDC701D282D3D6F0051407E /* T_TabView.swift in Sources */,
 				5E6A53292796F6CC00CAFD8B /* FaceID&TouchIDView.swift in Sources */,
 				5EAB841E27887EDE0056C827 /* TaskView.swift in Sources */,
+				5EDC7023282D4A2C0051407E /* MainTabView.swift in Sources */,
+				5EDC7025282D4A4E0051407E /* ApprenticView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
