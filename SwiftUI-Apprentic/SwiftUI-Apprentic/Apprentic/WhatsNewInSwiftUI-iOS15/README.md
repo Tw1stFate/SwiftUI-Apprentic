@@ -13,3 +13,11 @@
 * AppStorage Raw Representable
 * Alternative Done Button on Keyboard
 * Canvas(Graphics Context)
+* Keyboard Accessory View
+* Focused(Keyboard Resign/Begin First Responder)
+* Access to Bidings within the Collection/Set
+* New Forground Styles
+* Custom Rendering And Colouring For System Images
+* New Text Customisation's
+* Timeline View
+* New Button Customisation's (Control Group)
