@@ -49,7 +49,7 @@ struct TaskView_Previews: PreviewProvider {
 }
 
 struct TodoListRow: View {
-    var task: Task
+    var task: TodoTask
     var body: some View {
         HStack {
             Image(systemName: task.completed ? "checkmark.circle" : "circle")
